@@ -9,7 +9,7 @@ function LoadingFallback() {
   return (
     <mesh>
       <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color="#2d6a4f" wireframe />
+      <meshStandardMaterial color="#1f5a59" wireframe />
     </mesh>
   );
 }
@@ -20,9 +20,9 @@ export default function ForestMap() {
       <Canvas
         camera={{ position: [8, 6, 8], fov: 45, near: 0.1, far: 100 }}
         gl={{ antialias: true, alpha: false }}
-        style={{ background: "#0a0f0d" }}
+        style={{ background: "#0b2434" }}
       >
-        <fog attach="fog" args={["#0a0f0d", 12, 25]} />
+        <fog attach="fog" args={["#0b2434", 12, 25]} />
         <ambientLight intensity={0.4} />
         <directionalLight
           position={[5, 8, 3]}
@@ -41,7 +41,7 @@ export default function ForestMap() {
           maxPolarAngle={Math.PI / 2.2}
         />
       </Canvas>
-      <div className="absolute bottom-3 left-3 flex gap-2 text-[10px]">
+      <div className="absolute bottom-3 left-3 flex gap-2 text-[10px] text-white">
         <span className="flex items-center gap-1">
           <span className="w-2 h-2 rounded-full bg-[#1b4332]" /> Healthy
         </span>

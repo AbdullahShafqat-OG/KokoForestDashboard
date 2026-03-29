@@ -4,7 +4,7 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
 import { useDashboardStore } from "@/hooks/useDashboardStore";
 import { getForestData } from "@/data/generateForestData";
 
-const COLORS = ["#2d6a4f", "#a3b18a", "#d4a843", "#c1121f"];
+const COLORS = ["#428b6F", "#1f5a59", "#d4a843", "#c1121f"];
 const LABELS = ["Healthy", "Moderate", "High Stress", "Critical"];
 
 export default function HealthDistribution() {
@@ -20,8 +20,8 @@ export default function HealthDistribution() {
   ];
 
   return (
-    <div className="bg-forest-card border border-forest-border rounded-lg p-4">
-      <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-3">
+    <div className="bg-white border border-forest-border rounded-lg p-4 shadow-sm">
+      <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-3 font-heading font-semibold">
         Health Distribution
       </h3>
       <div className="flex items-center gap-4">
@@ -40,10 +40,11 @@ export default function HealthDistribution() {
             </Pie>
             <Tooltip
               contentStyle={{
-                background: "#111916",
-                border: "1px solid #1e2e26",
+                background: "#ffffff",
+                border: "1px solid #e2e8f0",
                 borderRadius: 8,
                 fontSize: 12,
+                color: "#0b2434",
               }}
               formatter={(value) => `${value}%`}
             />
@@ -56,8 +57,8 @@ export default function HealthDistribution() {
                 className="w-2.5 h-2.5 rounded-full"
                 style={{ background: COLORS[i] }}
               />
-              <span className="text-gray-400">{d.name}</span>
-              <span className="font-medium text-gray-200 ml-auto">
+              <span className="text-gray-500">{d.name}</span>
+              <span className="font-medium text-forest-header ml-auto">
                 {d.value}%
               </span>
             </div>

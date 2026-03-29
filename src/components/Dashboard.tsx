@@ -19,7 +19,7 @@ const ForestMap = dynamic(() => import("./ForestMap"), {
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col h-screen bg-forest-bg text-gray-200">
+    <div className="flex flex-col h-screen bg-forest-bg text-forest-header">
       <Header />
       <div className="flex flex-1 overflow-hidden flex-col lg:flex-row">
         <div className="w-full lg:w-[60%] h-[50vh] lg:h-auto border-b lg:border-b-0 lg:border-r border-forest-border">

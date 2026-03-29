@@ -51,13 +51,13 @@ export default function SummaryCards() {
       {cards.map((c) => (
         <div
           key={c.label}
-          className="bg-forest-card border border-forest-border rounded-lg p-3 backdrop-blur-sm"
+          className="bg-white border border-forest-border rounded-lg p-3 shadow-sm"
         >
-          <div className="text-[10px] uppercase tracking-wider text-gray-500 mb-1">
+          <div className="text-[10px] uppercase tracking-wider text-gray-500 mb-1 font-heading font-semibold">
             {c.label}
           </div>
           <div
-            className={`text-lg font-bold ${c.sub || "text-forest-accent"}`}
+            className={`text-lg font-bold font-heading ${c.sub || "text-forest-accent"}`}
           >
             {c.value}
           </div>

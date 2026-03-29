@@ -2,9 +2,9 @@
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between px-6 py-3 bg-forest-card border-b border-forest-border">
+    <header className="flex items-center justify-between px-6 py-3 bg-forest-header border-b border-forest-header">
       <div className="flex items-center gap-2">
-        <span className="text-sm text-gray-400">
+        <span className="text-sm text-gray-300 font-heading">
           Forest Health Analytics Dashboard for
         </span>
         <a
@@ -24,7 +24,7 @@ export default function Header() {
           />
         </a>
       </div>
-      <span className="text-xs px-2 py-1 rounded bg-amber-warn/15 text-amber-warn border border-amber-warn/30">
+      <span className="text-xs px-2 py-1 rounded bg-amber-warn/15 text-amber-warn border border-amber-warn/30 font-heading">
         Prototype using simulated data
       </span>
     </header>

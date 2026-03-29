@@ -29,9 +29,9 @@ export default function TimeSeriesChart() {
   });
 
   return (
-    <div className="bg-forest-card border border-forest-border rounded-lg p-4">
-      <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-3">
-        Dead Tree Count 2022–2025
+    <div className="bg-white border border-forest-border rounded-lg p-4 shadow-sm">
+      <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-3 font-heading font-semibold">
+        Dead Tree Count 2022-2025
         {selectedZone && (
           <span className="text-forest-accent ml-2">
             ({data.zones.find((z) => z.id === selectedZone)?.name})
@@ -46,24 +46,25 @@ export default function TimeSeriesChart() {
               <stop offset="95%" stopColor="#c1121f" stopOpacity={0} />
             </linearGradient>
           </defs>
-          <CartesianGrid strokeDasharray="3 3" stroke="#1e2e26" />
+          <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
           <XAxis
             dataKey="name"
-            tick={{ fill: "#6b7280", fontSize: 10 }}
-            axisLine={{ stroke: "#1e2e26" }}
+            tick={{ fill: "#64748b", fontSize: 10 }}
+            axisLine={{ stroke: "#e2e8f0" }}
             interval={3}
           />
           <YAxis
-            tick={{ fill: "#6b7280", fontSize: 10 }}
-            axisLine={{ stroke: "#1e2e26" }}
+            tick={{ fill: "#64748b", fontSize: 10 }}
+            axisLine={{ stroke: "#e2e8f0" }}
             width={50}
           />
           <Tooltip
             contentStyle={{
-              background: "#111916",
-              border: "1px solid #1e2e26",
+              background: "#ffffff",
+              border: "1px solid #e2e8f0",
               borderRadius: 8,
               fontSize: 12,
+              color: "#0b2434",
             }}
           />
           <Area

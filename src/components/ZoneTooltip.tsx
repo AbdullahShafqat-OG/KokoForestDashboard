@@ -25,27 +25,27 @@ export default function ZoneTooltip() {
 
   return (
     <div
-      className="fixed pointer-events-none z-50 bg-forest-card/95 backdrop-blur-md border border-forest-border rounded-lg px-3 py-2 text-xs shadow-xl"
+      className="fixed pointer-events-none z-50 bg-white/95 backdrop-blur-md border border-forest-border rounded-lg px-3 py-2 text-xs shadow-xl"
       style={{
         left: mousePos.x + 12,
         top: mousePos.y - 10,
       }}
     >
-      <div className="font-medium text-forest-accent mb-1">
+      <div className="font-medium text-forest-accent mb-1 font-heading">
         {zone.name}{" "}
-        <span className="text-gray-500">{zone.id}</span>
+        <span className="text-gray-400">{zone.id}</span>
       </div>
-      <div className="text-gray-400">
-        NDVI: <span className="text-gray-200">{zone.ndvi[currentQuarter]}</span>
+      <div className="text-gray-500">
+        NDVI: <span className="text-forest-header">{zone.ndvi[currentQuarter]}</span>
       </div>
-      <div className="text-gray-400">
+      <div className="text-gray-500">
         Dead trees:{" "}
-        <span className="text-gray-200">
+        <span className="text-forest-header">
           {zone.deadTrees[currentQuarter].toLocaleString()}
         </span>
       </div>
-      <div className="text-gray-400">
-        Area: <span className="text-gray-200">{zone.area} ha</span>
+      <div className="text-gray-500">
+        Area: <span className="text-forest-header">{zone.area} ha</span>
       </div>
     </div>
   );

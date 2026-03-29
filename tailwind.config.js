@@ -7,14 +7,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ['"Rajdhani"', "sans-serif"],
+        content: ['"PT Sans"', "sans-serif"],
+      },
       colors: {
         forest: {
-          bg: "#0a0f0d",
-          card: "#111916",
-          border: "#1e2e26",
-          green: "#2d6a4f",
-          light: "#40916c",
-          accent: "#52b788",
+          bg: "#ffffff",
+          card: "#ffffff",
+          border: "#e2e8f0",
+          header: "#0b2434",
+          blue: "#0b4279",
+          teal: "#1f5a59",
+          green: "#428b6F",
+          accent: "#428b6F",
+          light: "#1f5a59",
         },
         amber: {
           warn: "#d4a843",

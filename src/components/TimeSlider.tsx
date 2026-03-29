@@ -16,22 +16,22 @@ export default function TimeSlider() {
   const setViewMode = useDashboardStore((s) => s.setViewMode);
 
   return (
-    <div className="bg-forest-card border-t border-forest-border px-6 py-3">
+    <div className="bg-white border-t border-forest-border px-6 py-3">
       <div className="flex items-center gap-4">
         <button
           onClick={() =>
             setViewMode(viewMode === "health" ? "risk" : "health")
           }
-          className={`text-xs px-3 py-1.5 rounded-md border transition-colors shrink-0 ${
+          className={`text-xs px-3 py-1.5 rounded-md border transition-colors shrink-0 font-heading font-semibold ${
             viewMode === "risk"
-              ? "bg-danger/20 border-danger/40 text-danger"
-              : "bg-forest-green/20 border-forest-green/40 text-forest-accent"
+              ? "bg-danger/10 border-danger/40 text-danger"
+              : "bg-forest-green/10 border-forest-green/40 text-forest-green"
           }`}
         >
           {viewMode === "health" ? "Health View" : "Risk View"}
         </button>
         <div className="flex-1 flex items-center gap-3">
-          <span className="text-[10px] text-gray-500 shrink-0 w-14">
+          <span className="text-[10px] text-gray-500 shrink-0 w-14 font-heading font-semibold">
             {LABELS[currentQuarter]}
           </span>
           <input
@@ -42,11 +42,11 @@ export default function TimeSlider() {
             onChange={(e) => setCurrentQuarter(Number(e.target.value))}
             className="flex-1 h-1.5 appearance-none rounded-full bg-forest-border cursor-pointer
               [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-3.5 [&::-webkit-slider-thumb]:h-3.5
-              [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-forest-accent
-              [&::-webkit-slider-thumb]:border-2 [&::-webkit-slider-thumb]:border-forest-green
+              [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-forest-green
+              [&::-webkit-slider-thumb]:border-2 [&::-webkit-slider-thumb]:border-forest-teal
               [&::-webkit-slider-thumb]:shadow-lg [&::-webkit-slider-thumb]:cursor-pointer"
           />
-          <span className="text-[10px] text-gray-500 shrink-0">2022–2025</span>
+          <span className="text-[10px] text-gray-500 shrink-0 font-heading">2022-2025</span>
         </div>
       </div>
     </div>
