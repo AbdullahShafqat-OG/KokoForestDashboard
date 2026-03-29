@@ -24,9 +24,6 @@ export default function Header() {
           />
         </a>
       </div>
-      <span className="text-xs px-2 py-1 rounded bg-amber-warn/15 text-amber-warn border border-amber-warn/30 font-heading">
-        Prototype using simulated data
-      </span>
     </header>
   );
 }

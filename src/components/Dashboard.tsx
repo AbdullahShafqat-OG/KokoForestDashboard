@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import Header from "./Header";
+import Footer from "./Footer";
 import AnalyticsPanel from "./AnalyticsPanel";
 import TimeSlider from "./TimeSlider";
 import ZoneTooltip from "./ZoneTooltip";
@@ -31,6 +32,7 @@ export default function Dashboard() {
       </div>
       <TimeSlider />
       <ZoneTooltip />
+      <Footer />
     </div>
   );
 }
