@@ -16,7 +16,7 @@ function LoadingFallback() {
 
 export default function ForestMap() {
   return (
-    <div className="relative w-full h-full min-h-[400px]">
+    <div className="relative w-full h-full">
       <Canvas
         camera={{ position: [8, 6, 8], fov: 45, near: 0.1, far: 100 }}
         gl={{ antialias: true, alpha: false }}
