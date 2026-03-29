@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-forest-bg: #0a0f0d;
+}
+
+body {
+  background: var(--color-forest-bg);
+  color: #e0e0e0;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2d6a4f #111916;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #111916;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #2d6a4f;
+  border-radius: 3px;
+}
