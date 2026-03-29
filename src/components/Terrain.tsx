@@ -87,7 +87,7 @@ export default function Terrain() {
           color = color.clone().lerp(new THREE.Color("#ffffff"), 0.2);
         }
       } else {
-        color = new THREE.Color("#0d1f17");
+        color = new THREE.Color("#2d6a4f");
       }
 
       colors.setXYZ(i, color.r, color.g, color.b);
@@ -168,11 +168,6 @@ export default function Terrain() {
         <meshStandardMaterial vertexColors side={THREE.DoubleSide} />
       </mesh>
 
-      {gridLineGeos.map((geo, i) => (
-        <lineLoop key={i} geometry={geo}>
-          <lineBasicMaterial color="#2d6a4f" opacity={0.3} transparent />
-        </lineLoop>
-      ))}
 
       <points geometry={deadTreesGeo}>
         <pointsMaterial

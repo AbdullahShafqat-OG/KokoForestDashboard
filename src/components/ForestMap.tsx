@@ -20,9 +20,10 @@ export default function ForestMap() {
       <Canvas
         camera={{ position: [8, 6, 8], fov: 45, near: 0.1, far: 100 }}
         gl={{ antialias: true, alpha: false }}
-        style={{ background: "#0b2434" }}
+        style={{ background: "#ffffff" }}
       >
-        <fog attach="fog" args={["#0b2434", 12, 25]} />
+        <color attach="background" args={["#ffffff"]} />
+        <fog attach="fog" args={["#ffffff", 12, 25]} />
         <ambientLight intensity={0.4} />
         <directionalLight
           position={[5, 8, 3]}
