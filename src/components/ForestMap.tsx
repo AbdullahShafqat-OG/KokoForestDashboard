@@ -42,7 +42,7 @@ export default function ForestMap() {
           maxPolarAngle={Math.PI / 2.2}
         />
       </Canvas>
-      <div className="absolute bottom-3 left-3 flex gap-2 text-[10px] text-gray-700">
+      <div className="absolute bottom-3 left-3 flex gap-2 text-[10px] text-gray-700 bg-white/90 backdrop-blur-sm rounded-md px-3 py-1.5 shadow-sm">
         <span className="flex items-center gap-1">
           <span className="w-2 h-2 rounded-full bg-[#1b4332]" /> Healthy
         </span>
@@ -56,7 +56,7 @@ export default function ForestMap() {
           <span className="w-2 h-2 rounded-full bg-[#c1121f]" /> Critical
         </span>
         <span className="flex items-center gap-1 ml-2">
-          <span className="w-2 h-2 rounded-full bg-[#ff2020]" /> Dead trees
+          <span className="w-2 h-2 bg-[#ff2020]" /> Dead trees
         </span>
       </div>
     </div>
