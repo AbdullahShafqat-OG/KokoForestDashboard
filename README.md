@@ -1,6 +1,6 @@
 # KOKO Forest Dashboard
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/harbor-koko-forest-demo/deploy-status)](https://harbor-koko-forest-demo.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b2f8bcc0-1b4b-4ffe-82f6-33acb94c93bd/deploy-status)](https://app.netlify.com/projects/harbor-koko-forest-demo/deploys)
 
 Interactive forest health analytics dashboard built with Next.js, Three.js, and Recharts. Prototype for the Harbor challenge showcasing KOKO Forest's data outputs — 3D terrain visualization, health/risk mapping, bark beetle tracking, and temporal change detection.
 
