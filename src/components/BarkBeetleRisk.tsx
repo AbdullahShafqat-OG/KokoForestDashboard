@@ -34,7 +34,7 @@ export default function BarkBeetleRisk() {
   return (
     <div className="bg-forest-card border border-forest-border rounded-lg p-4">
       <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-1">
-        Bark Beetle — Cumulative Degree Days
+        Bark Beetle
       </h3>
       <div className="flex items-center gap-2 mb-3">
         <span className="text-2xl font-bold text-amber-warn">{dd}</span>

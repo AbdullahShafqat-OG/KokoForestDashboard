@@ -31,7 +31,7 @@ export default function TimeSeriesChart() {
   return (
     <div className="bg-forest-card border border-forest-border rounded-lg p-4">
       <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-3">
-        Dead Tree Count — 2022–2025
+        Dead Tree Count 2022–2025
         {selectedZone && (
           <span className="text-forest-accent ml-2">
             ({data.zones.find((z) => z.id === selectedZone)?.name})
