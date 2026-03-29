@@ -20,13 +20,13 @@ const ForestMap = dynamic(() => import("./ForestMap"), {
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col h-screen bg-forest-bg text-forest-header">
+    <div className="flex flex-col h-dvh bg-forest-bg text-forest-header">
       <Header />
       <div className="flex flex-1 overflow-hidden flex-col lg:flex-row">
-        <div className="w-full lg:w-[60%] h-[50vh] lg:h-auto border-b lg:border-b-0 lg:border-r border-forest-border">
+        <div className="relative z-10 w-full lg:w-[60%] h-[35vh] lg:h-auto shrink-0 border-b lg:border-b-0 lg:border-r border-forest-border">
           <ForestMap />
         </div>
-        <div className="w-full lg:w-[40%] overflow-y-auto">
+        <div className="w-full lg:w-[40%] flex-1 min-h-0 overflow-y-auto">
           <AnalyticsPanel />
         </div>
       </div>
